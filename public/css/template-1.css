@@ -1,3 +1,7 @@
+:root {
+  --text-color: green;
+}
+
 .page {
     background: #ffffff;
     padding: 0 15px;
@@ -11,7 +15,11 @@
   .header {
   padding: 24px;
   
-  border-bottom: 1px solid #DEE2E6;
+  border: 1px solid #000;
+  border-radius: 10px;
+  outline: 1px solid #000;
+  outline-offset: 3px;
+  box-shadow: 5px 5px 10px 0px red;
   }
   
   .logo {
@@ -35,8 +43,9 @@
   }
   
   .nav_link:hover {
-    text-decoration: underline;
-    color: blue;
+    text-decoration: underline;   
+
+    opacity: 50%;
   }
   
   .nav_vertical > .nav_link{
@@ -77,14 +86,14 @@
   
     .footer_title {
       font-size: 20px;
-      color: #212529;
+      color: var (--text-color, var (--text-color, #212529));
       display: block;
       margin-bottom: 12px;
     }
   
     .hero_title {
       font-size: 56px;
-      color: #212529;
+      color: var (--text-color, var (--text-color, #212529));
       font-weight: 500;
       margin-bottom: 12px;
       text-align: center;
@@ -92,10 +101,11 @@
   
     .hero_text {
       font-size: 20px;
-      color: #212529;
+      color: var (--text-color, var (--text-color, #212529));
       text-align: center;
       max-width: 585px;
       margin: 0 auto;
+      height: 500px;
     }
   
     .plans_card:not(:last-of-type) {
@@ -106,7 +116,7 @@
       padding: 12px;
       text-align: center;
       font-size: 24px;
-      color: #212529;
+      color: var (--text-color, var (--text-color, #212529));
     }
   
     .card-body {
@@ -125,7 +135,7 @@
   
     .card_price_amount {
       font-size: 40px;
-      color:#212529;
+      color:var (--text-color, var (--text-color, #212529));
     }
   
     .card_price_duration {
@@ -135,7 +145,7 @@
   
      .card_description_item {
       font-size: 16px;
-      color:#212529;
+      color:var (--text-color, var (--text-color, #212529));
   
       display: block;
       text-align: center;
@@ -184,3 +194,80 @@
   
       text-overflow: ellipsis;
     } */
+
+    /* .page {
+      background-color: red;
+    } */
+
+    .page {
+      /* background-image: url("/pic/ukr_flag.jpg"); */
+      background-repeat: no-repeat;
+
+      background-size: cover;
+    }
+
+    .hero_text {
+      background-color: transparent;
+    }
+
+    .card_block {
+      /* list-style-type: upper-alpha; */
+      list-style-position: inside;
+
+      list-style-image: linear-gradient(
+        to bottom right, blue, red
+      );
+
+      padding: 0;
+    }
+
+    .card_description_item {
+      display: list-item;
+    }
+
+    /* .table tr {
+      border: 1px solid #343A40
+    } */
+
+    .table td {
+      border: 1px solid #4f6983;
+      border-bottom-color: red;
+      border-right-color: blue;
+
+
+    }
+
+    .table {
+      table-layout: auto;
+      width: 200px;
+
+      border-collapse: unset;
+
+      border-spacing: 10px;
+
+      caption-side: top;
+
+      empty-cells: hide;
+    }
+
+    .nav_link::before, 
+    .nav_link::after   {
+
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url(/pic/ukr_flag.jpg);
+    }
+
+    .nav_link::before {
+      margin-right: 15px;
+    }
+
+    .calc {
+      width: 600px;
+
+      margin: 0;
+
+      margin-left: calc(50% - (600px / 2));
+    }
