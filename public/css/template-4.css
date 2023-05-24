@@ -179,7 +179,9 @@
       padding: var(--space-b);  
       gap: var(--space-b);
       
-      border-bottom: 1px solid var(--color-border);       
+      border-bottom: 1px solid var(--color-border); 
+      
+      
     }
 
     .card_image {
@@ -201,7 +203,7 @@
       align-items: flex-start;
       text-align: start;
       gap: var(--space-l);   
-      width: 33%;           
+      width: 100%;           
     }
 
     .card_text {
