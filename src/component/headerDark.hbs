@@ -1,0 +1,25 @@
+<header class="header">
+    {{#with header}}
+    <div class="header_nav">
+        <div>
+            {{> darkLogo}}
+        </div>
+        <nav class="header_links">
+            <div class="header_links_right">
+                {{> darkNavHeader list=links}}
+            </div>
+        </nav>
+    </div>
+    <div class="ad">
+        {{#with ad}}
+        <div class="ad_main">
+            <div class="ad_logo">Ad</div>
+            <span class="ad_text">{{text}}:
+                <a href="{{url}}" class="ad_link">{{url}}</a>
+            </span>
+        </div>
+        <div class="users_item">Users online: {{../userOnline}}</div>
+        {{/with}}
+    </div>
+    {{/with}}
+</header>
