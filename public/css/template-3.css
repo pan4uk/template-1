@@ -1,4 +1,4 @@
-@keyframes fly {
+/* @keyframes fly {
   from {
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@
 
     background: purple;
 }
-}
+} */
 
 :root {
   --space-m: 12px;
